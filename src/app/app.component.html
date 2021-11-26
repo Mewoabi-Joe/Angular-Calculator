@@ -1,0 +1,70 @@
+<div class="calco">
+  <h3>Calco Powered by Joe</h3>
+<table>
+  <tr>
+    <td colspan="4">
+      <textarea disabled id="display" class="display" type="text">{{
+        display
+      }}</textarea>
+    </td>
+  </tr>
+
+  <tr>
+    <td *ngFor="let info of row1">
+      <app-button
+        (calculate)="calculate($event)"
+        className="{{ info.className }}"
+        value="{{ info.value }}"
+      ></app-button>
+    </td>
+  </tr>
+
+  <tr>
+    <td *ngFor="let info of row2">
+      <app-button
+        (calculate)="calculate($event)"
+        className="{{ info.className }}"
+        value="{{ info.value }}"
+      ></app-button>
+    </td>
+  </tr>
+
+  <tr>
+    <td *ngFor="let info of row3">
+      <app-button
+        (calculate)="calculate($event)"
+        className="{{ info.className }}"
+        value="{{ info.value }}"
+      ></app-button>
+    </td>
+  </tr>
+
+  <tr>
+    <td *ngFor="let info of row4">
+      <app-button
+        (calculate)="calculate($event)"
+        className="{{ info.className }}"
+        value="{{ info.value }}"
+      ></app-button>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <app-button
+        (calculate)="calculate($event)"
+        className="cyan"
+        value="0"
+      ></app-button>
+    </td>
+    <td *ngFor="let info of row5">
+      <app-button
+        (calculate)="calculate($event)"
+        className="{{ info.className }}"
+        value="{{ info.value }}"
+      ></app-button>
+    </td>
+  </tr>
+</table>
+
+</div>
